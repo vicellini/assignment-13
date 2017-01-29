@@ -10,7 +10,18 @@
 ////------------------------------------------------------------------
 
 
-var merge = function()
+var merge = function(obj1, obj2){
+  var finalObj = {}
+
+  for(var prop1 in obj1){
+    finalObj[prop1] = obj1[prop1]
+  }
+  for(var prop2 in obj2){
+    finalObj[prop2] = obj2[prop2]
+  }
+
+  return finalObj;
+}
 
 
 

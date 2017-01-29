@@ -4,7 +4,20 @@
  // a properties object. It should return a new list containing only those
  // objects that meet the key-value conditions in the properties object.
 
+var where = function(someArr, someProp){
+var finalArr = [];
 
+for(var i = 0; i < someArr.length; i++){
+  var anObject = someArr[i];
+    if(anObject.hasOwnProperty(someProp) === true){
+
+      finalArr.push(anObject);
+    }
+  }
+
+  return finalArr;
+
+}
 
 
 
