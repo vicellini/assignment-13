@@ -24,7 +24,7 @@ var getWordCount = function(someString){
       countObj[makeProp] = countObj[makeProp] + 1;
     }
   }
-
+  // console.log(countObj)
   return countObj;
 }
 
